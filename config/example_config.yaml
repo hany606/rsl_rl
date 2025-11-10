@@ -14,6 +14,7 @@ runner:
   logger: tensorboard  # tensorboard, neptune, wandb
   neptune_project: legged_gym
   wandb_project: legged_gym
+  wandb_group: ppo_baseline
 
   # Policy
   policy:

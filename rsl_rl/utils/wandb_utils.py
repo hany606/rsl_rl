@@ -34,6 +34,11 @@ class WandbSummaryWriter(SummaryWriter):
         except KeyError:
             entity = None
 
+        try:
+            group = cfg["wandb_group"]
+        except KeyError:
+            group = None
+
         # Initialize wandb
         wandb.init(project=project, entity=entity, name=run_name)
 
